@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-style: border-box;
+    background-color: rgb(2, 2, 80);
 }
 
 .navbar {
@@ -11,9 +12,10 @@
     align-items: center;
     width: 100%;
     height: 55px;
-    background-color: rgb(2, 2, 112);
+    background-color: rgb(2, 2, 79);
     color: rgb(231, 224, 224);
-    padding: 5100 20px;
+    box-shadow: 0 5px 10px rgba(155, 155, 155,1);
+    padding: 5px 10px 5px 10px;
 
 }
 
@@ -22,9 +24,10 @@
     height: max-content;
     color:rgb(2, 2, 112);
     text-decoration: none;
-    padding: 5px;
+    padding: 3px;
     font-weight: bold;
     font-size: 17px;
+    border-radius: 0px; 
 
 }
 
@@ -47,13 +50,70 @@
 
 } 
 
+.links a.active_page {
+    color: rgb(254, 173, 254);
+    border-bottom: 1px solid rgb(254, 173, 234);
+} 
+
+
+
 .links li {
     padding: 15px;
 }
 
 .landing-banner {
     display: grid;
-    width: max-content;
+    place-content: center left;
+    width: 100%;
+    min-height: 100dvh;
     font-family: Impact, fantasy;
-    background-color: blue;
+    background-image: url('assets/ssa_banner.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat; 
+    
+    
+    color: whitesmoke;
+    
+}
+
+.landing-banner * {
+    background-color: transparent !important;
+}
+
+.landing-cluster {
+    margin: 40px;
+    width: 100%;
+}
+
+#landing-title {
+    font-size: 5dvh;
+    font-weight: bold;  
+    margin: 10px 10px 10px 0px;
+}
+
+.landing-subtitle {
+    margin: 10px 0px 0px 0px;
+}
+
+.page-line {
+  border: none;         
+  height: 1.5px;       
+  background-color: whitesmoke;   
+  width: 100%;      
+}
+
+.home-about {
+    background-color: rgb(2, 2, 80);
+    background-size: cover;
+    background-position: center;
+    backgronund-repeat: no-repeat;
+    width: 100%;
+    color: whitesmoke;
+    line-height: 2; 
+    margin: 10px;
+}
+
+.home-about-subtitle {
+    margin: 10px;
 }
