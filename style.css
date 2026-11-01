@@ -81,7 +81,9 @@
     background-color: transparent !important;
 }
 
-.landing-cluster {
+
+/*bacon green, tsa, hack club, ftc, ssa, sparc, drones, fashioneering, monarch???, bsei??????*/
+.landing-cluster { 
     margin: 40px;
     width: 100%;
 }
@@ -103,17 +105,25 @@
   width: 100%;      
 }
 
-.home-about {
+.about-block {
     background-color: rgb(2, 2, 80);
     background-size: cover;
     background-position: center;
-    backgronund-repeat: no-repeat;
+    background-repeat: no-repeat;
     width: 100%;
     color: whitesmoke;
     line-height: 2; 
     margin: 10px;
 }
 
-.home-about-subtitle {
+.about-block-title {
     margin: 10px;
+}
+
+.about-block-text {
+    margin: 10px;
+}
+
+.subgroup-button {
+    
 }
