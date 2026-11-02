@@ -252,8 +252,8 @@ footer {
     margin: 30px auto;
     padding: 20px;
 }
-
-.subgroups-card {
+ 
+.subgroup-card {
     background-color: whitesmoke; /* just for now */
     color: blue;
     border: 2px pink;
@@ -263,10 +263,7 @@ footer {
     width: 100%;
     box-shadow: 0 4px 10px lightgray;
     box-sizing: border-box;
-.subgroup-card {
-    display: flexbox;
-    background-color: blue; /* just for now */
-    border-radius: 20px; 
+    display: flexbox;  
     text-align: center;
     padding:20px;
     transition: color 0.5s  ease; 
@@ -287,15 +284,12 @@ footer {
     border-color: hotpink;
 }
 
-.subgroups-card h2 {
+.subgroup-card h2 {
     background-color: whitesmoke;
     color: blue;
     margin-bottom: 15px;
 }
-
-.subgroups-card p {
-    background-color: whitesmoke;
-    color: blue;
+ 
 .subgroup-card:hover h2, .subgroup-card:hover p {
     
     color: rgb(9, 174, 234);
@@ -308,6 +302,8 @@ footer {
 
 .subgroup-card p {
     
+    background-color: whitesmoke;
+    color: blue;
     transition: color 0.5s  ease; 
     margin-bottom: 15px;
 }
@@ -323,7 +319,7 @@ footer {
 }
 
 .subgroups-card a:hover {
-    background-color: hotpink; /* just for now */
+    background-color: hotpink;
 }
 
 .ftc-container {
@@ -384,6 +380,4 @@ footer {
 .hack-container p {
     font-size: 18px;
     margin: 15px 0;
-.subgroup-card a:hover {
-    background-color: blue; /* just for now */
 }
