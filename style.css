@@ -1,11 +1,15 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; 
     background-color: rgb(2, 2, 80);
+    text-decoration: none;
+    color: whitesmoke;
 }
 
+p {
+    background-color: transparent;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,9 +28,10 @@
     height: max-content;
     color:rgb(2, 2, 112);
     text-decoration: none;
-    padding: 3px;
+    padding: 2px 4px 2px 4px;
     font-weight: bold;
     font-size: 17px;
+    letter-spacing: 2px;
     border-radius: 0px; 
 
 }
@@ -61,6 +66,12 @@
     padding: 15px;
 }
 
+.menu-image {
+    height: 45px;
+    width: auto;
+    margin: 0px 20px 0px 0px 
+}
+
 .landing-banner {
     display: grid;
     place-content: center left;
@@ -89,7 +100,7 @@
 }
 
 #landing-title {
-    font-size: 5dvh;
+    font-size: 8dvh;
     font-weight: bold;  
     margin: 10px 10px 10px 0px;
 }
@@ -99,10 +110,10 @@
 }
 
 .page-line {
-  border: none;         
-  height: 1.5px;       
+  border: 1px solid whitesmoke;         
+  height: 0.5px;       
   background-color: whitesmoke;   
-  width: 100%;      
+  width: 80%;      
 }
 
 .about-block {
@@ -113,21 +124,95 @@
     width: 100%;
     color: whitesmoke;
     line-height: 2; 
-    margin: 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .about-block-title {
-    margin: 10px;
+    margin: 2px;
 }
 
 .about-block-text {
-    margin: 10px;
+    margin: 2px;
 }
 
-.subgroup-button {
+.button {
+    font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
-    border-width: 1mm;
+    border: 2px solid whitesmoke;
+    margin: 40px 0px 30px 0px;
+    padding: 5px 5px 5px 20px;
+    width: 52%;
+    height: auto;
+    transition: border-color 0.4s ease; 
+    
+}
+
+
+.button a {
+    color:whitesmoke;
+    transition: color 0.4s ease; 
+}
+
+.button:hover {
+    border-color: rgb(9, 174, 234);
+
+}
+
+.button:hover .line {
+    background-color: rgb(9, 174, 234);
+}
+
+.button:hover .arrow {
+    border-color: rgb(9, 174, 234);
+}
+.button a:hover {
+    color: rgb(9, 174, 234);
+}
+
+.line {
+    display: inline-block;
+    background-color: whitesmoke;
+    height: 2px;
+    width: 45px;
+    margin: 0px 0px 4px 10px;
+    position: relative;
+    top: 0;
+    left: 5px;
+    
+    transition: background-color 0.4s ease; 
+}
+.arrow {
+    display: inline-block;
+    border-style: solid;
     border-color: whitesmoke;
+    border-width: 2px 2px 0 0;
+    background-color: transparent;
+    width: 10px;
+    height: 10px;  
+    
+    transition: border-color 0.4s ease; 
+}
+
+.arrow.right {
+    transform: rotate(45deg);
+    position: relative;
+    top: 1.25px;
+    left: -12px; 
+} 
+
+footer {
+    background-color:rgb(1, 1, 62);
+    color: whitesmoke;
+    text-align: left;
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+.footer-content {
+    background-color: transparent;
+    margin: 10px 15px; 
     width: 200px;
     height: 50px;
 }

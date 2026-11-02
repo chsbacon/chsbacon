@@ -1,2 +1,2 @@
-# Glasshalfwater.github.io
-First github site
+# CHS BACON Website
+Website for CHS Bacon
