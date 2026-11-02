@@ -213,4 +213,59 @@ footer {
 .footer-content {
     background-color: transparent;
     margin: 10px 15px; 
+    width: 200px;
+    height: 50px;
+}
+
+.subgroups-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.subgroups-header h1 {
+    font-size: 40px;
+}
+
+.subgroups-header p {
+    font-size: 18px;
+}
+
+.subgroups-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.subgroups-card {
+    background-color: blue; /* just for now */
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+}
+
+.subgroups-card:hover {
+    transform: translateY(-5px);
+}
+
+.subgroups-card h2 {
+    margin-bottom: 15px;
+}
+
+.subgroups-card p {
+    margin-bottom: 15px;
+}
+
+.subgroups-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: blue; /* just for now */
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.subgroups-card a:hover {
+    background-color: blue; /* just for now */
 }
