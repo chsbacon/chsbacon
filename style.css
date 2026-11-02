@@ -272,12 +272,13 @@ footer {
 }
 
 .subgroup-card img {
-    height: 200px;
+    height: auto;
     width: 80%;
     background-color: whitesmoke;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .subgroup-card:hover {
@@ -334,8 +335,8 @@ footer {
 }
 
 .ftc-card {
-    background-color: pink;
-    color: blue;
+    background-color: rgba(255, 192, 203, 0.86);
+    color: darkblue;
     border: 2px whitesmoke;
     border-radius: 18px;
     width: 100%;
@@ -345,23 +346,33 @@ footer {
     box-sizing: border-box;
 }
 
-.ftc-card h2 {
-    background-color: pink;
-    color: blue;
+.ftc-card h2 { 
+    color: darkblue;
     font-size: 24px;
     margin-bottom: 15px;
 }
 
-.ftc-card p {
-    background-color: pink;
+.ftc-card p { 
     font-size: 16px;
 }
+
+.ftc-card img {
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+}
+
 
 .page-line {
     border: none;
     height: 3px;
     background-color: pink;
-    width: 60%;
+    width: 100%;
     margin: 20px auto;
     border-radius: 10px;
 }
