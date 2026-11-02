@@ -48,6 +48,7 @@ img {
     display: flex;
     list-style: none;
 }
+
 .links a {
     
     color:whitesmoke;
@@ -228,10 +229,15 @@ footer {
 .subgroups-header {
     text-align: center;
     padding: 60px 20px 30px;
+    color: blue;
 }
 
 .subgroups-header h1 {
     font-size: 40px;
+}
+
+.subgroups-header h2 {
+    margin-top: 25px;
 }
 
 .subgroups-header p {
@@ -247,6 +253,16 @@ footer {
     padding: 20px;
 }
 
+.subgroups-card {
+    background-color: whitesmoke; /* just for now */
+    color: blue;
+    border: 2px pink;
+    border-radius: 18px;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 10px lightgray;
+    box-sizing: border-box;
 .subgroup-card {
     display: flexbox;
     background-color: blue; /* just for now */
@@ -267,8 +283,19 @@ footer {
 
 .subgroup-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 18px lightgray;
+    border-color: hotpink;
 }
 
+.subgroups-card h2 {
+    background-color: whitesmoke;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.subgroups-card p {
+    background-color: whitesmoke;
+    color: blue;
 .subgroup-card:hover h2, .subgroup-card:hover p {
     
     color: rgb(9, 174, 234);
@@ -288,11 +315,75 @@ footer {
 .subgroup-card a {
     display: inline-block;
     margin-top: 15px;
-    background-color: blue; /* just for now */
-    border-radius: 7px;
+    background-color: pink; /* just for now */
+    color: blue;
+    border-radius: 20px;
+    font-weight: bold;
     padding: 10px 20px;
 }
 
+.subgroups-card a:hover {
+    background-color: hotpink; /* just for now */
+}
+
+.ftc-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.ftc-card {
+    background-color: pink;
+    color: blue;
+    border: 2px whitesmoke;
+    border-radius: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px lightgray;
+    box-sizing: border-box;
+}
+
+.ftc-card h2 {
+    background-color: pink;
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.ftc-card p {
+    background-color: pink;
+    font-size: 16px;
+}
+
+.page-line {
+    border: none;
+    height: 3px;
+    background-color: pink;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.hack-container {
+    max-width: 1000px;
+    margin: 20px auto 60px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(2, 2, 79);
+}
+
+.hack-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hack-container p {
+    font-size: 18px;
+    margin: 15px 0;
 .subgroup-card a:hover {
     background-color: blue; /* just for now */
 }
