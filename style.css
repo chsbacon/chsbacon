@@ -100,7 +100,7 @@ p {
 }
 
 #landing-title {
-    font-size: 5dvh;
+    font-size: 8dvh;
     font-weight: bold;  
     margin: 10px 10px 10px 0px;
 }
@@ -113,7 +113,7 @@ p {
   border: 1px solid whitesmoke;         
   height: 0.5px;       
   background-color: whitesmoke;   
-  width: 100%;      
+  width: 80%;      
 }
 
 .about-block {
