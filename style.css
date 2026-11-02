@@ -260,19 +260,21 @@ footer {
     border-radius: 18px;
     text-align: center;
     padding: 30px;
-    width: 100%;
+    width: 100%; 
     box-shadow: 0 4px 10px lightgray;
     box-sizing: border-box;
     display: flexbox;  
     text-align: center;
-    padding:20px;
+    padding: 20px;
     transition: color 0.5s  ease; 
+    overflow: hidden;
   
 }
 
 .subgroup-card img {
-    height: auto;
+    height: 200px;
     width: 80%;
+    background-color: whitesmoke;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
