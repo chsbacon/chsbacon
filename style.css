@@ -25,8 +25,7 @@ img {
     width: 100%;
     height: 55px;
     background-color: rgb(2, 2, 79);
-    color: rgb(231, 224, 224);
-    box-shadow: 0 5px 10px rgba(155, 155, 155,1);
+    color: rgb(231, 224, 224); 
     padding: 5px 10px 5px 10px;
 
 }
@@ -48,6 +47,7 @@ img {
     display: flex;
     list-style: none;
 }
+
 .links a {
     
     color:whitesmoke;
@@ -90,6 +90,7 @@ img {
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat; 
+    box-shadow: 0 10px 10px lightgray;
     
     
     color: whitesmoke;
@@ -117,19 +118,33 @@ img {
     margin: 10px 0px 0px 0px;
 }
 
-.page-line {
+#home-page hr {
   border: 1px solid whitesmoke;         
-  height: 0.5px;       
+  height: 1px;       
   background-color: whitesmoke;   
-  width: 80%;      
+  width: 90%;      
+  border-radius: 0;
 }
 
+.about-block hr {
+    border-color: transparent;
+    width: 100%;
+}
+
+.page-line  {
+    border: 1px solid;
+    height: 3px;
+    background-color: pink;
+    width: 100%;
+    margin: 20px auto 20px 0px;
+    border-radius: 10px;
+}
 .about-block {
     background-color: rgb(2, 2, 80);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 90%;
     color: whitesmoke;
     line-height: 2; 
     margin: 20px;
@@ -220,18 +235,24 @@ footer {
 
 .footer-content {
     background-color: transparent;
+    align-content: center;
     margin: 10px 15px; 
-    width: 200px;
-    height: 50px;
+    width: 100%;
+    height: 30px;
 }
 
 .subgroups-header {
     text-align: center;
     padding: 60px 20px 30px;
+    color: blue;
 }
 
 .subgroups-header h1 {
     font-size: 40px;
+}
+
+.subgroups-header h2 {
+    margin-top: 25px;
 }
 
 .subgroups-header p {
@@ -246,29 +267,47 @@ footer {
     margin: 30px auto;
     padding: 20px;
 }
-
+ 
 .subgroup-card {
-    display: flexbox;
-    background-color: blue; /* just for now */
-    border-radius: 20px; 
+    background-color: whitesmoke; /* just for now */
+    color: blue;
+    border: 2px pink;
+    border-radius: 18px;
     text-align: center;
-    padding:20px;
+    padding: 30px;
+    width: 100%; 
+    box-shadow: 0 4px 10px lightgray;
+    box-sizing: border-box;
+    display: flexbox;  
+    text-align: center;
+    padding: 20px;
     transition: color 0.5s  ease; 
+    overflow: hidden;
   
 }
 
 .subgroup-card img {
     height: auto;
     width: 80%;
+    background-color: transparent;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 100%; 
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .subgroup-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 18px lightgray;
+    border-color: hotpink;
 }
 
+.subgroup-card h2 {
+    background-color: whitesmoke;
+    color: blue;
+    margin-bottom: 15px;
+}
+ 
 .subgroup-card:hover h2, .subgroup-card:hover p {
     
     color: rgb(9, 174, 234);
@@ -281,6 +320,8 @@ footer {
 
 .subgroup-card p {
     
+    background-color: whitesmoke;
+    color: blue;
     transition: color 0.5s  ease; 
     margin-bottom: 15px;
 }
@@ -288,11 +329,84 @@ footer {
 .subgroup-card a {
     display: inline-block;
     margin-top: 15px;
-    background-color: blue; /* just for now */
-    border-radius: 7px;
+    background-color: pink; /* just for now */
+    color: blue;
+    border-radius: 20px;
+    font-weight: bold;
     padding: 10px 20px;
 }
 
-.subgroup-card a:hover {
-    background-color: blue; /* just for now */
+.subgroups-card a:hover {
+    background-color: hotpink;
+}
+
+.ftc-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.ftc-card {
+    background-color: rgba(255, 192, 203, 0.86);
+    color: darkblue;
+    border: 2px whitesmoke;
+    border-radius: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px lightgray;
+    box-sizing: border-box;
+}
+
+.ftc-card h2 { 
+    color: darkblue;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.ftc-card p { 
+    font-size: 16px;
+}
+
+.ftc-card img {
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+}
+
+
+
+.hack-container {
+    max-width: 1000px;
+    margin: 20px auto 60px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(2, 2, 79);
+}
+
+.hack-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hack-container p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.subgroups-container > a:first-child .subgroup-card img {
+    height: 930px;
+    object-fit: cover;
+} 
+
+.about-page-title {
+    margin: 10px 20px 0px 20px;
 }
